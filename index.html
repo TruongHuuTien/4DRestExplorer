@@ -4,6 +4,8 @@
 	<link rel="stylesheet/less" type="text/css" href="design/style.less" />
 	<script src="js/jquery-2.1.0.min.js"></script>
 	<script src="js/less-1.7.0.min.js"></script>
+	<script src="js/restExplorer.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -22,12 +24,27 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-3 col-md-2 sidebar">
-					<ul class="nav nav-sidebar">
-						<li><a href="#Accounts">Accounts</a></li>
-						<li><a href="#Users">Users</a></li>
-						<li><a href="#PostalAddresses">PostalAddresses</a></li>
-						<li><a href="#Establishmnent">Establishment</a></li>
+					<ul id="menu" class="nav nav-sidebar">
 					</ul>
+				</div>
+				<div class="col-sm-9 col-md-10">
+					<h2 id="structureTitle"></h2>
+					<h3>Structure</h3>
+					<table id="structure" class="restTable">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Type</th>
+							</tr>
+						</thead>
+						<tbody id="structureBody"></tbody>
+					</table>
+					<hr />
+					<h3>Data</h3>
+					<table id="data" class="restTable">
+						<thead id="dataHeader"></thead>
+						<tbody id="dataBody"></tbody>
+					</table>
 				</div>
 			</div>
 		</div>

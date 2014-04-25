@@ -7,3 +7,34 @@
 #quickUrlAccessInput {
 	width: 560px;
 }
+
+.restTable {
+	width: 100%;
+	font-size: 12px;
+	th {
+		padding: 20px 40px;
+	}
+	th:first-child {
+		padding-left: 8px;
+	}
+	th:last-child {
+			padding-right: 8px;
+		}
+	tbody,  {
+		td {
+			padding: 6px 40px;
+		}
+		td:first-child {
+			padding-left: 8px;
+		}
+		td:last-child {
+			padding-right: 8px;
+		}
+		tr:nth-child(odd) {
+			background-color: #F9F9F9;
+		}
+		tr.indexed > td {
+			font-weight: bold;
+		}
+	}
+}
